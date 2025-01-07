@@ -5,8 +5,8 @@ metadata:
   namespace: default
 spec:
   containers:
-  - image: docker.io/nginx
-    name: nasty-pod
+  - name: nasty-pod
+    image: nginx
     resources:
       requests:
-        cpu: "200m"   #changed by gptscript
+        cpu: "100m"
